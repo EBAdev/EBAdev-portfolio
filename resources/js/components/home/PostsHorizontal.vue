@@ -1,56 +1,56 @@
 <template lang="">
   <div class="flex snap-x snap-mandatory overflow-x-auto">
     <!-- Posts card Components-->
-    <PostCard
+    <AppPostCard
       theme="Firefighting"
       title="My life in the DEMA"
       author="Emil Beck Aagaard"
-      date=", Posted Last monday"
+      date="today"
       imgURL="/assets/images/posts/firefighter.jpg"
     >
       This is a quick summary
-    </PostCard>
-    <PostCard
+    </AppPostCard>
+    <AppPostCard
       theme="Project development"
       title="Brainstorming"
       author="Emil Beck Aagaard"
-      date=", Posted Last monday"
+      date="last wednesday"
       imgURL="/assets/images/posts/idea.jpg"
     >
       This is a quick summary
-    </PostCard>
-    <PostCard
+    </AppPostCard>
+    <AppPostCard
       theme="Finance"
       title="Investing in indexfunds"
       author="Emil Beck Aagaard"
-      date=", Posted Last monday"
+      date="last monday"
       imgURL="/assets/images/posts/investing.jpg"
     >
       This is a quick summary
-    </PostCard>
-    <PostCard
+    </AppPostCard>
+    <AppPostCard
       theme="Programming"
       title="The VITL tech stack"
       author="Emil Beck Aagaard"
-      date=", Posted Last monday"
+      date="1 hour ago"
       imgURL="/assets/images/posts/programming.jpg"
     >
       This is a quick summary
-    </PostCard>
-    <PostCard
+    </AppPostCard>
+    <AppPostCard
       theme="Studying"
       title="How to learn fast"
       author="Emil Beck Aagaard"
-      date=", Posted Last monday"
+      date="08/06/2021"
       imgURL="/assets/images/posts/study.jpg"
     >
       This is a quick summary
-    </PostCard>
+    </AppPostCard>
   </div>
 </template>
 <script>
-import PostCard from "./AppPostCard.vue";
+import AppPostCard from "../ui/AppPostCard";
 export default {
-  components: { PostCard },
+  components: { AppPostCard },
 };
 </script>

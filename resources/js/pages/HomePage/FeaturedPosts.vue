@@ -3,7 +3,7 @@
   <div class="bg-gray-100">
     <div class="container">
       <h1
-        class="font-moonliteSolid mt-10 mb-4 underline decoration-blue-600 decoration-4 underline-offset-4 text-center text-neutral-800 text-6xl"
+        class="font-moonliteSolid pt-10 mb-4 underline decoration-blue-600 decoration-4 underline-offset-4 text-center text-neutral-800 text-6xl"
       >
         Featured Blog Posts
       </h1>
@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-import PostsHorizontal from "./PostsHorizontal";
+import PostsHorizontal from "../../components/home/PostsHorizontal";
 import Newsletter from "../../components/home/Newsletter";
 export default {
   components: { PostsHorizontal, Newsletter },

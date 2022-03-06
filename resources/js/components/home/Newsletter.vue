@@ -2,10 +2,10 @@
   <div class="flex flex-col items-center">
     <div class="flex flex-col p-4">
       <h1 class="tracking-wider text-center text-blue-700 text-2xl">
-        Get notified when i post something new
+        Sign up for my newsletter,
       </h1>
       <h2 class="tracking-wider text-center text-neutral-700 text-xl">
-        Sign up for my newsletter.
+        and get notified when i post something new.
       </h2>
     </div>
     <div class="flex mb-10">
@@ -16,7 +16,7 @@
       />
       <button
         type="button"
-        class="p-4 hover:bg-neutral-300 text-black rounded-md"
+        class="p-2 ml-4 hover:bg-neutral-300 text-black rounded-md"
       >
         Submit
       </button>

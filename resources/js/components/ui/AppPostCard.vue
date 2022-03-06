@@ -22,10 +22,10 @@
         >
         <div class="flex mb-2 font-serif whitespace-pre-wrap">
           <p class="font-light text-gray-700">By</p>
-          <a class="font-semibold text-md text-gray-700 hover:text-blue-600">{{
-            author
-          }}</a>
-          <p class="font-light text-gray-700">{{ date }}</p>
+          <a class="font-semibold text-md text-gray-700 hover:text-blue-600">
+            {{ author }}</a
+          >
+          <p class="font-light text-gray-700">, Posted {{ date }}</p>
         </div>
         <p
           class="font-serif text-ellipsis overflow-hidden break-words mb-4 whitespace-pre-wrap mr-4 leading-8"
@@ -42,7 +42,7 @@
   </div>
 </template>
 <script>
-import ThemeButton from "./AppThemeButton.vue";
+import ThemeButton from "./AppThemeButton";
 export default {
   components: {
     ThemeButton,
