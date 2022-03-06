@@ -20003,7 +20003,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("nav", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppNavLink, {
     href: "/",
-    active: _ctx.$page.component === 'Home'
+    active: _ctx.$page.component === 'HomePage/Index'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_5];
@@ -20015,7 +20015,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppNavLink, {
     href: "/posts",
-    active: _ctx.$page.component === 'Posts'
+    active: _ctx.$page.component === 'PostsPage'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_6];
@@ -20027,7 +20027,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppNavLink, {
     href: "/about",
-    active: _ctx.$page.component === 'About'
+    active: _ctx.$page.component === 'AboutPage'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
@@ -20039,7 +20039,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["active"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppNavLink, {
     href: "/contact",
-    active: _ctx.$page.component === 'Contact'
+    active: _ctx.$page.component === 'ContactPage'
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_8];

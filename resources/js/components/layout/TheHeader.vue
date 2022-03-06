@@ -3,16 +3,16 @@
     <div name="nav" class="container flex items-center py-4">
       <div class="mb-3 shrink-0">Logo</div>
       <div class="hidden sm:flex flex-1 justify-end items-center gap-8">
-        <AppNavLink href="/" :active="$page.component === 'Home'">
+        <AppNavLink href="/" :active="$page.component === 'HomePage/Index'">
           Home
         </AppNavLink>
-        <AppNavLink href="/posts" :active="$page.component === 'Posts'"
+        <AppNavLink href="/posts" :active="$page.component === 'PostsPage'"
           >Posts
         </AppNavLink>
-        <AppNavLink href="/about" :active="$page.component === 'About'"
+        <AppNavLink href="/about" :active="$page.component === 'AboutPage'"
           >About
         </AppNavLink>
-        <AppNavLink href="/contact" :active="$page.component === 'Contact'"
+        <AppNavLink href="/contact" :active="$page.component === 'ContactPage'"
           >Contact
         </AppNavLink>
 
