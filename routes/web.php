@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('Home');
+    return inertia('HomePage/Index');
 });
 Route::get('/posts', function () {
-    return inertia('Posts');
+    return inertia('PostsPage');
 });
 Route::get('/about', function () {
-    return inertia('About');
+    return inertia('AboutPage');
 });
 Route::get('/contact', function () {
-    return inertia('Contact');
+    return inertia('ContactPage');
 });

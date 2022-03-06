@@ -1,7 +1,7 @@
 <template>
   <Head title="EBAdev" />
 
-  <Nav />
+  <TheHeader />
 
   <slot />
 
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import Nav from "./Nav";
+import TheHeader from "./TheHeader";
 export default {
   components: {
-    Nav,
+    TheHeader,
   },
 };
 </script>

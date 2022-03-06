@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Layout from "../Shared/Layout";
+import Layout from "../components/layout/AppLayout";
 export default {
   layout: Layout,
 };

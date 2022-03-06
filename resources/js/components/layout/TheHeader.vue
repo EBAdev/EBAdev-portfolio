@@ -3,18 +3,18 @@
     <div name="nav" class="container flex items-center py-4">
       <div class="mb-3 shrink-0">Logo</div>
       <div class="hidden sm:flex flex-1 justify-end items-center gap-8">
-        <nav-link href="/" :active="$page.component === 'Home'">
+        <AppNavLink href="/" :active="$page.component === 'Home'">
           Home
-        </nav-link>
-        <nav-link href="/posts" :active="$page.component === 'Posts'"
+        </AppNavLink>
+        <AppNavLink href="/posts" :active="$page.component === 'Posts'"
           >Posts
-        </nav-link>
-        <nav-link href="/about" :active="$page.component === 'About'"
+        </AppNavLink>
+        <AppNavLink href="/about" :active="$page.component === 'About'"
           >About
-        </nav-link>
-        <nav-link href="/contact" :active="$page.component === 'Contact'"
+        </AppNavLink>
+        <AppNavLink href="/contact" :active="$page.component === 'Contact'"
           >Contact
-        </nav-link>
+        </AppNavLink>
 
         <button
           type="button"
@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import NavLink from "./NavLink";
+import AppNavLink from "../ui/AppNavLink";
 export default {
   components: {
-    NavLink,
+    AppNavLink,
   },
 };
 </script>

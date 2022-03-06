@@ -1,7 +1,7 @@
 <template lang="">
   <Head title="EBAdev - Home" />
 
-  <Hero />
+  <HeroSection />
   <FeaturedPosts />
   <!-- My Experience -->
   <div id="my-work" class="container scroll-mt-14">
@@ -18,14 +18,14 @@
 </template>
 
 <script>
-import Layout from "../Shared/Layout";
-import Hero from "./Components/Hero";
-import FeaturedPosts from "./Components/FeaturedPosts";
-import MyExperience from "./Components/MyExperience";
+import Layout from "../../components/layout/AppLayout";
+import HeroSection from "./HeroSection";
+import FeaturedPosts from "./FeaturedPosts";
+import MyExperience from "./MyExperience";
 export default {
   layout: Layout,
   components: {
-    Hero,
+    HeroSection,
     FeaturedPosts,
     MyExperience,
   },

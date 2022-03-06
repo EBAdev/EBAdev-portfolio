@@ -49,7 +49,7 @@
   </div>
 </template>
 <script>
-import PostCard from "./PostCard.vue";
+import PostCard from "../../components/ui/AppPostCard";
 export default {
   components: { PostCard },
 };

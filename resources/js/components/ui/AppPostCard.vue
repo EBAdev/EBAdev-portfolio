@@ -42,7 +42,7 @@
   </div>
 </template>
 <script>
-import ThemeButton from "./ThemeButton.vue";
+import ThemeButton from "./AppThemeButton.vue";
 export default {
   components: {
     ThemeButton,

@@ -21,8 +21,8 @@
   </div>
 </template>
 <script>
-import PostsHorizontal from "./PostsHorizontal.vue";
-import Newsletter from "./Newsletter.vue";
+import PostsHorizontal from "./PostsHorizontal";
+import Newsletter from "../../components/home/Newsletter";
 export default {
   components: { PostsHorizontal, Newsletter },
 };
