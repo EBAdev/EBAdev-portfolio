@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Moonlite Solid";
+  src: local("Moonlite Solid"), local("MoonliteSolid"),
+    url("MoonliteSolid.woff2") format("woff2"),
+    url("MoonliteSolid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moonlite Outline";
+  src: local("Moonlite Outline"), local("MoonliteOutline"),
+    url("MoonliteOutline.woff2") format("woff2"),
+    url("MoonliteOutline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
