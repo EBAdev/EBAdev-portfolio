@@ -1,6 +1,5 @@
 <template lang="">
   <Head title="EBAdev - Home" />
-
   <HeroSection />
   <FeaturedPosts />
   <MyExperience />

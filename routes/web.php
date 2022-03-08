@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('HomePage/Index');
+    return inertia('HomePage/Index',[
+      'username' => 'BECK'
+    ]
+    );
 });
 Route::get('/posts', function () {
-    return inertia('PostsPage');
+    return inertia('PostsPage',[
+      'posts' => Post::all(),
+    ]);
 });
 Route::get('/about', function () {
     return inertia('AboutPage');
