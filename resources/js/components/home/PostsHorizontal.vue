@@ -2,7 +2,7 @@
   <div class="flex snap-x snap-mandatory overflow-x-auto">
     <!-- Posts card Components-->
     <AppPostCard
-      theme="Firefighting"
+      category="Firefighting"
       title="My life in the DEMA"
       author="Emil Beck Aagaard"
       date="today"
@@ -11,7 +11,7 @@
       This is a quick summary
     </AppPostCard>
     <AppPostCard
-      theme="Project development"
+      category="Project development"
       title="Brainstorming"
       author="Emil Beck Aagaard"
       date="last wednesday"
@@ -20,7 +20,7 @@
       This is a quick summary
     </AppPostCard>
     <AppPostCard
-      theme="Finance"
+      category="Finance"
       title="Investing in indexfunds"
       author="Emil Beck Aagaard"
       date="last monday"
@@ -29,7 +29,7 @@
       This is a quick summary
     </AppPostCard>
     <AppPostCard
-      theme="Programming"
+      category="Programming"
       title="The VITL tech stack"
       author="Emil Beck Aagaard"
       date="1 hour ago"
@@ -38,7 +38,7 @@
       This is a quick summary
     </AppPostCard>
     <AppPostCard
-      theme="Studying"
+      category="Studying"
       title="How to learn fast"
       author="Emil Beck Aagaard"
       date="08/06/2021"

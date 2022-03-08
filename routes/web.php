@@ -15,10 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('HomePage/Index',[
-      'username' => 'BECK'
-    ]
-    );
+    return inertia('HomePage/Index');
 });
 Route::get('/posts', function () {
     return inertia('PostsPage',[

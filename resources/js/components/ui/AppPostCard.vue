@@ -12,7 +12,7 @@
       </div>
       <div class="flex flex-col h-72 ml-4 w-2/3">
         <div class="flex space-x-4 pb-2 justify-start mt-4">
-          <ThemeButton href="">{{ theme }}</ThemeButton>
+          <CategoryButton href="">{{ category }}</CategoryButton>
         </div>
         <a
           href=""
@@ -42,13 +42,13 @@
   </div>
 </template>
 <script>
-import ThemeButton from "./AppThemeButton";
+import CategoryButton from "./AppCategoryButton";
 export default {
   components: {
-    ThemeButton,
+    CategoryButton,
   },
   props: {
-    theme: String,
+    category: String,
     title: String,
     author: String,
     date: String,
