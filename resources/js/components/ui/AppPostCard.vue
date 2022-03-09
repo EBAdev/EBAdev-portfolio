@@ -12,7 +12,9 @@
       </div>
       <div class="flex flex-col h-72 ml-4 w-2/3">
         <div class="flex space-x-4 pb-2 justify-start mt-4">
-          <CategoryButton href="">{{ category }}</CategoryButton>
+          <CategoryButton :category_color="category_color" href="">
+            {{ category }}
+          </CategoryButton>
         </div>
         <a
           href=""
@@ -21,7 +23,7 @@
           {{ title }}</a
         >
         <div class="flex mb-2 font-serif whitespace-pre-wrap">
-          <p class="font-light text-gray-700">By</p>
+          <p class="font-light text-gray-700">By&nbsp;</p>
           <a class="font-semibold text-md text-gray-700 hover:text-blue-600">
             {{ author }}</a
           >
@@ -50,6 +52,7 @@ export default {
   },
   props: {
     category: String,
+    category_color: String,
     title: String,
     author: String,
     date: String,
@@ -57,4 +60,3 @@ export default {
   },
 };
 </script>
-<style lang=""></style>

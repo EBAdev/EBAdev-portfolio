@@ -5,12 +5,14 @@
     <AppPostCard
       v-for="post in posts"
       :key="post.id"
-      :category="post.category_id"
+      :category="post.category"
+      :category_color="post.category_color"
       :title="post.title"
-      :author="post.user_id"
-      :date="post.created_at"
+      :author="post.author"
+      :date="post.date"
       imgURL="/assets/images/posts/study.jpg"
-    />
+      >{{ post.excerpt }}</AppPostCard
+    >
   </div>
 </template>
 

@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +24,14 @@ Route::get('/', function () {
 });
 Route::get('/posts', function () {
     return inertia('PostsPage',[
-      'posts' => Post::all(),
+      'posts' => Post::with('author','category')->get()->map(fn($post) =>[
+        'title' => $post->title,
+        'excerpt' => $post->excerpt,
+        'date' => $post->created_at->diffForHumans(),
+        'author' => $post->author->name,
+        'category' => $post->category->name,
+        'category_color' => $post->category->hex,
+      ]),
     ]);
 });
 Route::get('/about', function () {
