@@ -13,18 +13,17 @@
       </p>
     </div>
 
-    <!-- Posts scroller-->
     <PostsHorizontal />
 
     <!-- Newsletter  Component-->
-    <Newsletter />
+    <NewsletterSignup />
   </div>
 </template>
 <script>
 import PostsHorizontal from "../../components/home/PostsHorizontal";
-import Newsletter from "../../components/home/Newsletter";
+import NewsletterSignup from "../../components/home/NewsletterSignup";
 export default {
-  components: { PostsHorizontal, Newsletter },
+  components: { PostsHorizontal, NewsletterSignup },
 };
 </script>
 <style lang=""></style>

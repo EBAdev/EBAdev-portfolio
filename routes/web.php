@@ -11,8 +11,11 @@ use Illuminate\Support\Facades\Route;
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
-|
+|  
 */
+
+
+
 
 Route::get('/', function () {
     return inertia('HomePage/Index');
@@ -28,3 +31,4 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return inertia('ContactPage');
 });
+

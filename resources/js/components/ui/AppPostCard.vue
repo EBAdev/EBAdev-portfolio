@@ -42,6 +42,7 @@
   </div>
 </template>
 <script>
+//TODO ADD responsive design to mobile and featured views.
 import CategoryButton from "./AppCategoryButton";
 export default {
   components: {

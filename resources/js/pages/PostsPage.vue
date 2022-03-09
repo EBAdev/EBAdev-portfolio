@@ -15,10 +15,8 @@
 </template>
 
 <script>
-import Layout from "../components/layout/AppLayout";
 import AppPostCard from "../components/ui/AppPostCard";
 export default {
-  layout: Layout,
   components: {
     AppPostCard,
   },

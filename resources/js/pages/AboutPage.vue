@@ -5,8 +5,5 @@
 </template>
 
 <script>
-import Layout from "../components/layout/AppLayout";
-export default {
-  layout: Layout,
-};
+export default {};
 </script>
