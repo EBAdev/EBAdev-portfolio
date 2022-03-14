@@ -1,21 +1,31 @@
 <h1>Todolist portfolio</h1>
 
 <h2>Posts page</h2>
-- Make AppPostCard responsive to mobile and featured views.
-- Add filtering and queries to posts page.
+<ul>
+<li> Make AppPostCard responsive to mobile and featured views.</li>
+<li> Add filtering and queries to posts page.</li>
+</ul>
 
 <h2>Homepage</h2>
-- Make horizontal posts scroller reflect DB
-- Add Experience section
-- Make newsletter signup possible
+<ul>
+<li> Make horizontal posts scroller reflect DB.</li>
+<li> Add Experience section.</li>
+<li> Make newsletter signup possible.</li>
+</ul>
 
 <h2>Layout</h2>
-- Add mobile navigatio
-- Add EBAdev logo
-- Add darkmode support for the page
+<ul>
+<li> Add mobile navigation.</li>
+<li> Add EBAdev logo.</li>
+<li> Add darkmode support for the page.</li>
+</ul>
 
 <h2>About page</h2>
-no work done jet
+<ul>
+<li> No work done jet.</li>
+</ul>
 
 <h2>Contact page</h2>
-no work done jet
+<ul>
+<li> No work done jet.</li>
+</ul>
