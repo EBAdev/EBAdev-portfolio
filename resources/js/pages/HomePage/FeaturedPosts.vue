@@ -1,5 +1,6 @@
-<template lang="">
+<template>
   <!-- Featured section-->
+
   <div class="bg-gray-100">
     <div class="container">
       <h1
@@ -20,8 +21,8 @@
   </div>
 </template>
 <script>
-import PostsHorizontal from "../../components/home/PostsHorizontal";
-import NewsletterSignup from "../../components/home/NewsletterSignup";
+import PostsHorizontal from "@homeComponents/PostsHorizontal";
+import NewsletterSignup from "@homeComponents/NewsletterSignup";
 export default {
   components: { PostsHorizontal, NewsletterSignup },
 };

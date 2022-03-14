@@ -23,8 +23,10 @@ Route::get('/', function () {
     return inertia('HomePage/Index');
 });
 Route::get('/posts', function () {
+  
     return inertia('PostsPage',[
-      'posts' => Post::with('author','category')->get()->map(fn($post) =>[
+      'posts' => Post::with('author','category')->paginate(6)->through(fn($post) =>[
+        'id' => $post->id,
         'title' => $post->title,
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),

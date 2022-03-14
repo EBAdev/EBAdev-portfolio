@@ -32,7 +32,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ui_AppNavLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ui/AppNavLink */ "./resources/js/components/ui/AppNavLink.vue");
+/* harmony import */ var _ui_AppNavLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ui/AppNavLink */ "./resources/js/components/ui/AppNavLink.vue");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -256,7 +256,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
 /* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
-/* harmony import */ var _components_layout_AppLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/layout/AppLayout */ "./resources/js/components/layout/AppLayout.vue");
+/* harmony import */ var _layout_AppLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @layout/AppLayout */ "./resources/js/components/layout/AppLayout.vue");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -283,7 +283,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 2:
               page = _context.sent["default"];
-              (_page$layout = page.layout) !== null && _page$layout !== void 0 ? _page$layout : page.layout = _components_layout_AppLayout__WEBPACK_IMPORTED_MODULE_4__["default"];
+              (_page$layout = page.layout) !== null && _page$layout !== void 0 ? _page$layout : page.layout = _layout_AppLayout__WEBPACK_IMPORTED_MODULE_4__["default"];
               return _context.abrupt("return", page);
 
             case 5:

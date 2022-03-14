@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import HeroSection from "./HeroSection";
-import FeaturedPosts from "./FeaturedPosts";
-import MyExperience from "./MyExperience";
+import HeroSection from "@homepage/HeroSection.vue";
+import FeaturedPosts from "@homepage/FeaturedPosts";
+import MyExperience from "@homepage/MyExperience";
 export default {
   components: {
     HeroSection,

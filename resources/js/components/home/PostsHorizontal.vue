@@ -49,7 +49,7 @@
   </div>
 </template>
 <script>
-import AppPostCard from "../ui/AppPostCard";
+import AppPostCard from "@ui/AppPostCard";
 export default {
   components: { AppPostCard },
 };

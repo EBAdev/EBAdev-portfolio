@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const mix = require("laravel-mix");
+const path = require("path");
 
 /*
  |--------------------------------------------------------------------------
@@ -17,4 +18,17 @@ mix
   .extract()
   .vue()
   .postCss("resources/css/app.css", "public/css", [require("tailwindcss")])
+  .webpackConfig({
+    resolve: {
+      alias: {
+        "@": path.resolve("resources/js"),
+        "@components": path.resolve("resources/js/components"),
+        "@homeComponents": path.resolve("resources/js/components/home"),
+        "@pages": path.resolve("resources/js/Pages"),
+        "@homepage": path.resolve("resources/js/Pages/HomePage"),
+        "@layout": path.resolve("resources/js/components/layout"),
+        "@ui": path.resolve("resources/js/components/ui"),
+      },
+    },
+  })
   .version();

@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import NavLink from "../ui/AppNavLink";
+import NavLink from "@ui/AppNavLink";
 export default {
   components: {
     NavLink,

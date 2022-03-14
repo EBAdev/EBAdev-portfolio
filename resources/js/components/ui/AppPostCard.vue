@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div
     class="mx-4 mt-6 mb-10 shrink-0 bg-blue-50 w-40 sm:w-80 md:w-96 lg:w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
   >
@@ -44,7 +44,7 @@
   </div>
 </template>
 <script>
-//TODO ADD responsive design to mobile and featured views.
+//TODO ADD responsive design to mobile and featured views. Make links work
 import CategoryButton from "./AppCategoryButton";
 export default {
   components: {
