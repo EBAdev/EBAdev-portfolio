@@ -23,9 +23,16 @@ Route::get('/', function () {
     return inertia('HomePage/Index');
 });
 Route::get('/posts', function () {
-  
+  //TODO filter through more stuff than only title with search
     return inertia('PostsPage',[
-      'posts' => Post::with('author','category')->paginate(6)->through(fn($post) =>[
+      'posts' => Post::query()
+      ->with('author','category')
+      ->when(Request::input('search'), function ($query, $search){
+        $query->where('title','like',"%{$search}%");
+      })
+      ->paginate(6)
+      ->withQueryString()
+      ->through(fn($post) =>[
         'id' => $post->id,
         'title' => $post->title,
         'excerpt' => $post->excerpt,
@@ -34,6 +41,7 @@ Route::get('/posts', function () {
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
       ]),
+      'filters'  => Request::only(['search'])
     ]);
 });
 Route::get('/about', function () {

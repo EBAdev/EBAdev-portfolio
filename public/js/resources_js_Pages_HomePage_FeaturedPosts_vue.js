@@ -315,7 +315,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "mx-4 mt-6 mb-10 shrink-0 bg-blue-50 w-40 sm:w-80 md:w-96 lg:w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
+  "class": "mx-4 mt-6 mb-10 shrink-0 bg-blue-50 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
 };
 var _hoisted_2 = {
   "class": "flex w-full"
