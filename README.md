@@ -5,6 +5,7 @@
 <li> Make AppPostCard responsive to mobile and featured views.</li>
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search</li>
+<li> Add category, author, and date to post view</li>
 </ul>
 
 <h2>Homepage</h2>
@@ -18,7 +19,7 @@
 <ul>
 <li> Add mobile navigation.</li>
 <li> Add EBAdev logo.</li>
-<li> Add darkmode support for the page.</li>
+<li> Add darkmode support for the app.</li>
 </ul>
 
 <h2>About page</h2>
