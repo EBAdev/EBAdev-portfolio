@@ -532,22 +532,6 @@ var map = {
 		"./resources/js/Pages/ContactPage.vue",
 		"resources_js_Pages_ContactPage_vue"
 	],
-	"./HomePage/FeaturedPosts": [
-		"./resources/js/Pages/HomePage/FeaturedPosts.vue",
-		"resources_js_Pages_HomePage_FeaturedPosts_vue"
-	],
-	"./HomePage/FeaturedPosts.vue": [
-		"./resources/js/Pages/HomePage/FeaturedPosts.vue",
-		"resources_js_Pages_HomePage_FeaturedPosts_vue"
-	],
-	"./HomePage/HeroSection": [
-		"./resources/js/Pages/HomePage/HeroSection.vue",
-		"resources_js_Pages_HomePage_HeroSection_vue"
-	],
-	"./HomePage/HeroSection.vue": [
-		"./resources/js/Pages/HomePage/HeroSection.vue",
-		"resources_js_Pages_HomePage_HeroSection_vue"
-	],
 	"./HomePage/Index": [
 		"./resources/js/Pages/HomePage/Index.vue",
 		"resources_js_Pages_HomePage_Index_vue"
@@ -556,23 +540,23 @@ var map = {
 		"./resources/js/Pages/HomePage/Index.vue",
 		"resources_js_Pages_HomePage_Index_vue"
 	],
-	"./HomePage/MyExperience": [
-		"./resources/js/Pages/HomePage/MyExperience.vue",
-		"resources_js_Pages_HomePage_MyExperience_vue"
-	],
-	"./HomePage/MyExperience.vue": [
-		"./resources/js/Pages/HomePage/MyExperience.vue",
-		"resources_js_Pages_HomePage_MyExperience_vue"
-	],
-	"./PostsPage": [
-		"./resources/js/Pages/PostsPage.vue",
+	"./PostsPage/Index": [
+		"./resources/js/Pages/PostsPage/Index.vue",
 		"/js/vendor",
-		"resources_js_Pages_PostsPage_vue"
+		"resources_js_Pages_PostsPage_Index_vue"
 	],
-	"./PostsPage.vue": [
-		"./resources/js/Pages/PostsPage.vue",
+	"./PostsPage/Index.vue": [
+		"./resources/js/Pages/PostsPage/Index.vue",
 		"/js/vendor",
-		"resources_js_Pages_PostsPage_vue"
+		"resources_js_Pages_PostsPage_Index_vue"
+	],
+	"./PostsPage/ThePost": [
+		"./resources/js/Pages/PostsPage/ThePost.vue",
+		"resources_js_Pages_PostsPage_ThePost_vue"
+	],
+	"./PostsPage/ThePost.vue": [
+		"./resources/js/Pages/PostsPage/ThePost.vue",
+		"resources_js_Pages_PostsPage_ThePost_vue"
 	]
 };
 function webpackAsyncContext(req) {

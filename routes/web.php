@@ -5,6 +5,8 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
+use function PHPSTORM_META\map;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +26,7 @@ Route::get('/', function () {
 });
 Route::get('/posts', function () {
   //TODO filter through more stuff than only title with search
-    return inertia('PostsPage',[
+    return inertia('PostsPage/Index',[
       'posts' => Post::query()
       ->with('author','category')
       ->when(Request::input('search'), function ($query, $search){
@@ -34,7 +36,8 @@ Route::get('/posts', function () {
       ->withQueryString()
       ->through(fn($post) =>[
         'id' => $post->id,
-        'title' => $post->title,
+        'title' => strip_tags($post->title),
+        'slug' => $post->slug,
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
@@ -44,6 +47,21 @@ Route::get('/posts', function () {
       'filters'  => Request::only(['search'])
     ]);
 });
+Route::get('/posts/{post:slug}', function (Post $post) {
+    return inertia('PostsPage/ThePost',[
+      'post'=> [
+        'id' => $post->id,
+        'title' => $post->title,
+        'slug' => $post->slug,
+        'body' => $post->body,
+        'date' => $post->created_at->diffForHumans(),
+        'author' => $post->author->name,
+        'category' => $post->category->name,
+        'category_color' => $post->category->hex,
+      ]
+    ]);
+  });
+
 Route::get('/about', function () {
     return inertia('AboutPage');
 });

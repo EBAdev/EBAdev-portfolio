@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import HeroSection from "@homepage/HeroSection.vue";
-import FeaturedPosts from "@homepage/FeaturedPosts";
-import MyExperience from "@homepage/MyExperience";
+import HeroSection from '@homeComponents/HeroSection'
+import FeaturedPosts from '@homeComponents/FeaturedPosts'
+import MyExperience from '@homeComponents/MyExperience'
 export default {
   components: {
     HeroSection,
     FeaturedPosts,
     MyExperience,
   },
-};
+}
 </script>

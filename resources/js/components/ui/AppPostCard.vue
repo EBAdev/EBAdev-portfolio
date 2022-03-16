@@ -12,21 +12,27 @@
       </div>
       <div class="flex flex-col h-72 ml-4 w-2/3">
         <div class="flex space-x-4 pb-2 justify-start mt-4">
-          <CategoryButton :category_color="category_color" href="">
+          <CategoryButton
+            :category_color="category_color"
+            v-bind:href="'categories/' + category"
+          >
             {{ category }}
           </CategoryButton>
         </div>
-        <a
-          href=""
+        <Link
+          v-bind:href="'posts/' + slug"
           class="font-serif capitalize font-bold text-2xl mb-2 mr-4 text-neutral-800 tracking-widest"
         >
-          {{ title }}</a
-        >
+          {{ title }}
+        </Link>
         <div class="flex mb-2 font-serif whitespace-pre-wrap">
           <p class="font-light text-gray-700">By&nbsp;</p>
-          <a class="font-semibold text-md text-gray-700 hover:text-blue-600">
-            {{ author }}</a
+          <Link
+            href="#"
+            class="font-semibold text-md text-gray-700 hover:text-blue-600"
           >
+            {{ author }}
+          </Link>
           <p class="font-light text-gray-700">, Posted {{ date }}</p>
         </div>
         <p
@@ -35,9 +41,13 @@
           <slot />
         </p>
         <div class="flex justify-end mr-8">
-          <a href="" class="text-blue-500 hover:text-blue-600 tracking-wider">
-            Continue Reading <i class="fas fa-arrow-right"></i
-          ></a>
+          <Link
+            v-bind:href="'posts/' + slug"
+            class="text-blue-500 hover:text-blue-600 tracking-wider"
+          >
+            Continue Reading
+            <i class="fas fa-arrow-right"></i>
+          </Link>
         </div>
       </div>
     </div>
@@ -57,6 +67,7 @@ export default {
     author: String,
     date: String,
     imgURL: String,
+    slug: String,
   },
 }
 </script>

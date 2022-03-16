@@ -12,6 +12,7 @@
       :title="post.title"
       :author="post.author"
       :date="post.date"
+      :slug="post.slug"
       imgURL="/assets/images/posts/study.jpg"
       >{{ post.excerpt }}</AppPostCard
     >
