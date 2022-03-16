@@ -5,7 +5,6 @@
 <li> Make AppPostCard responsive to mobile and featured views.</li>
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search</li>
-<li> Disable extreme amount of AJAX requests, laracasts ep 19</li>
 </ul>
 
 <h2>Homepage</h2>

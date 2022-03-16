@@ -22,16 +22,20 @@
 
 import { ref, watch } from 'vue'
 import { Inertia } from '@inertiajs/inertia'
+import debounce from 'lodash/debounce'
 
 let props = defineProps({ search: String })
 
 let search = ref(props.search)
 
-watch(search, (value) => [
-  Inertia.get(
-    '/posts',
-    { search: value },
-    { preserveState: true, replace: true },
-  ),
-])
+watch(
+  search,
+  debounce(function (value) {
+    Inertia.get(
+      '/posts',
+      { search: value },
+      { preserveState: true, replace: true },
+    )
+  }, 300),
+)
 </script>
