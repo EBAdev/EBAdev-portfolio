@@ -13,8 +13,9 @@
       <div class="flex flex-col h-72 ml-4 w-2/3">
         <div class="flex space-x-4 pb-2 justify-start mt-4">
           <CategoryButton
-            :category_color="category_color"
+            v-bind:category_color="category_color"
             v-bind:href="'categories/' + category"
+            :text_large="false"
           >
             {{ category }}
           </CategoryButton>
@@ -33,7 +34,7 @@
           >
             {{ author }}
           </Link>
-          <p class="font-light text-gray-700">, Posted {{ date }}</p>
+          <p class="font-light text-gray-700">,&nbsp;Posted&nbsp;{{ date }}</p>
         </div>
         <p
           class="font-serif text-ellipsis overflow-hidden break-words mb-4 whitespace-pre-wrap mr-4 leading-8"

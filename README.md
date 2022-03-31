@@ -1,11 +1,17 @@
 <h1>Todolist portfolio</h1>
 
+<h2>Backend</h2>
+<ul>
+<li> Add many-to-many relation between posts and categories.</li>
+</ul>
+
 <h2>Posts page</h2>
 <ul>
-<li> Make AppPostCard responsive to mobile and featured views.</li>
+<li> Make AppPostCard and Posts view responsive to mobile and featured views.</li>
 <li> Add filtering to posts page.</li>
-<li> Search through more stuff than only title with search</li>
-<li> Add category, author, and date to post view</li>
+<li> Search through more stuff than only title with search.</li>
+<li> Add support for responsive textsize on CategroyButton.</li>
+<li> Extract Author section to vue component.</li>
 </ul>
 
 <h2>Homepage</h2>
