@@ -11,7 +11,6 @@
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search.</li>
 <li> Add support for responsive textsize on CategroyButton.</li>
-<li> Extract Author section to vue component.</li>
 </ul>
 
 <h2>Homepage</h2>
