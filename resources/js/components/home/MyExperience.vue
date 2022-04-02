@@ -13,9 +13,7 @@
         languages and framworks. Which is why i have listed some of them here,
         which are the ones i have used most.
       </p>
-      <div
-        class="flex flex-row flex-wrap content-center justify-center space-x-4"
-      >
+      <div class="flex flex-row flex-wrap content-center justify-center my-4">
         <WorkExperience
           img_path="/images/technologies/Laravel.jpeg"
           title="Laravel"

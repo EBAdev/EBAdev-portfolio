@@ -328,7 +328,7 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_5 = {
-  "class": "flex flex-row flex-wrap content-center justify-center space-x-4"
+  "class": "flex flex-row flex-wrap content-center justify-center my-4"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_WorkExperience = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("WorkExperience");
