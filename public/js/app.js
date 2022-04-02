@@ -105,18 +105,17 @@ var _hoisted_1 = {
   "class": "bg-white z-50 sticky top-0"
 };
 var _hoisted_2 = {
-  name: "nav",
-  "class": "container flex items-center py-4"
+  "class": "container flex items-center justify-between py-4"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "mb-3 shrink-0"
+  "class": "flex-none"
 }, "EBAdev - logo", -1
 /* HOISTED */
 );
 
 var _hoisted_4 = {
-  "class": "hidden sm:flex flex-1 justify-end items-center gap-8"
+  "class": "hidden sm:flex justify-end items-center md:gap-8 gap-[1rem]"
 };
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Home ");
@@ -145,7 +144,6 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  name: "side-nav",
   "class": "flex sm:hidden flex-1 justify-end"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "text-2xl fas fa-bars"

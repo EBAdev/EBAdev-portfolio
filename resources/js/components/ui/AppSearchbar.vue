@@ -1,5 +1,5 @@
 <template>
-  <div class="relative rounded-md shadow-sm mt-1 w-full">
+  <div class="relative rounded-md shadow-sm mt-1 mx-4 w-full">
     <input
       v-model="search"
       type="text"

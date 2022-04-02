@@ -7,10 +7,10 @@
 
 <h2>Posts page</h2>
 <ul>
-<li> Make AppPostCard and Posts view responsive to mobile and featured views.</li>
+<li> Make AppPostCard view responsive to mobile and featured views.</li>
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search.</li>
-<li> Add support for responsive textsize on CategroyButton.</li>
+<li> (Add support for responsive textsize on CategroyButton.)</li>
 </ul>
 
 <h2>Homepage</h2>

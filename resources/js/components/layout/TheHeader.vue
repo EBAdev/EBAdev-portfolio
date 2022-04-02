@@ -1,8 +1,8 @@
 <template>
   <nav class="bg-white z-50 sticky top-0">
-    <div name="nav" class="container flex items-center py-4">
-      <div class="mb-3 shrink-0">EBAdev - logo</div>
-      <div class="hidden sm:flex flex-1 justify-end items-center gap-8">
+    <div class="container flex items-center justify-between py-4">
+      <div class="flex-none">EBAdev - logo</div>
+      <div class="hidden sm:flex justify-end items-center md:gap-8 gap-[1rem]">
         <NavLink href="/" :active="$page.component === 'HomePage/Index'">
           Home
         </NavLink>
@@ -30,7 +30,7 @@
           Login
         </button>
       </div>
-      <div name="side-nav" class="flex sm:hidden flex-1 justify-end">
+      <div class="flex sm:hidden flex-1 justify-end">
         <i class="text-2xl fas fa-bars"></i>
       </div>
     </div>
@@ -38,10 +38,10 @@
 </template>
 
 <script>
-import NavLink from "@ui/AppNavLink";
+import NavLink from '@ui/AppNavLink'
 export default {
   components: {
     NavLink,
   },
-};
+}
 </script>
