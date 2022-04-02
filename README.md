@@ -3,14 +3,15 @@
 <h2>Backend</h2>
 <ul>
 <li> Add many-to-many relation between posts and categories.</li>
+<li> Add rounting to categories page.</li>
+<li> Add routing to author page.</li>
 </ul>
 
 <h2>Posts page</h2>
 <ul>
-<li> Make AppPostCard view responsive to mobile and featured views.</li>
+<li> Update AppPostCard design. (Tailwind typography) </li>
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search.</li>
-<li> (Add support for responsive textsize on CategroyButton.)</li>
 </ul>
 
 <h2>Homepage</h2>
