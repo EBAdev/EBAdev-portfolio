@@ -22,6 +22,9 @@ __webpack_require__.r(__webpack_exports__);
     HeroSection: _homeComponents_HeroSection__WEBPACK_IMPORTED_MODULE_0__["default"],
     FeaturedPosts: _homeComponents_FeaturedPosts__WEBPACK_IMPORTED_MODULE_1__["default"],
     MyExperience: _homeComponents_MyExperience__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  props: {
+    posts: Array
   }
 });
 
@@ -45,6 +48,9 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     PostsHorizontal: _homeComponents_PostsHorizontal__WEBPACK_IMPORTED_MODULE_0__["default"],
     NewsletterSignup: _homeComponents_NewsletterSignup__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: {
+    posts: Array
   }
 });
 
@@ -105,6 +111,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_AppPostCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ui/AppPostCard */ "./resources/js/components/ui/AppPostCard.vue");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    posts: Array
+  },
   components: {
     AppPostCard: _ui_AppPostCard__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -185,7 +194,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "EBAdev - Home"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_HeroSection), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeaturedPosts), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MyExperience)], 64
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_HeroSection), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FeaturedPosts, {
+    posts: $props.posts
+  }, null, 8
+  /* PROPS */
+  , ["posts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MyExperience)], 64
   /* STABLE_FRAGMENT */
   );
 }
@@ -223,7 +236,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_NewsletterSignup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("NewsletterSignup");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Featured section"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PostsHorizontal), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Newsletter  Component"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NewsletterSignup)])], 2112
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Featured section"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PostsHorizontal, {
+    posts: $props.posts
+  }, null, 8
+  /* PROPS */
+  , ["posts"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Newsletter  Component"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_NewsletterSignup)])], 2112
   /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 }
@@ -243,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<img class=\"w-full h-screen -top-20 z-0 object-cover\" src=\"/assets/images/Hero.svg\"><div name=\"Hero\" class=\"container z-10\"><h1 class=\"font-moonliteSolid uppercase text-7xl text-center absolute inset-x-0 bottom-48 font-regular tracking-wider text-white dark:text-slate-200\"> Emil Beck Aagaard </h1><h1 class=\"font-moonliteOutline text-7xl text-center absolute inset-x-0 bottom-32 font-regular tracking-wider text-white dark:text-slate-200\"> Portfolio </h1><a href=\"#my-work\" class=\"font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-slate-400 hover:text-white hover:dark:text-slate-200 flex flex-col\"> My experience <i class=\"fas fa-chevron-down\"></i></a></div>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<img class=\"w-full h-screen -top-20 z-0 object-cover\" src=\"/assets/images/Hero.svg\"><div name=\"Hero\" class=\"container z-10\"><h1 class=\"font-moonliteSolid uppercase text-7xl text-center absolute inset-x-0 bottom-48 font-regular tracking-wider text-white\"> Emil Beck Aagaard </h1><h1 class=\"font-moonliteOutline text-7xl text-center absolute inset-x-0 bottom-32 font-regular tracking-wider text-white\"> Portfolio </h1><a href=\"#my-work\" class=\"font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-gray-400 hover:text-white flex flex-col\"> My experience <i class=\"fas fa-chevron-down\"></i></a></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Hero section"), _hoisted_1], 2112
@@ -329,86 +346,34 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "flex snap-x snap-mandatory overflow-x-auto"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is a quick summary ");
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is a quick summary ");
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is a quick summary ");
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is a quick summary ");
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is a quick summary ");
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_AppPostCard = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AppPostCard");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Posts card Components"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPostCard, {
-    category: "Firefighting",
-    title: "My life in the DEMA",
-    author: "Emil Beck Aagaard",
-    date: "today",
-    imgURL: "/assets/images/posts/firefighter.jpg"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_2];
-    }),
-    _: 1
-    /* STABLE */
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Posts card Components"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.posts, function (post) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_AppPostCard, {
+      key: post.id,
+      category: post.category,
+      category_color: post.category_color,
+      title: post.title,
+      author: post.author,
+      date: post.date,
+      slug: post.slug,
+      imgURL: "/assets/images/posts/study.jpg"
+    }, {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.excerpt), 1
+        /* TEXT */
+        )];
+      }),
+      _: 2
+      /* DYNAMIC */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPostCard, {
-    category: "Project development",
-    title: "Brainstorming",
-    author: "Emil Beck Aagaard",
-    date: "last wednesday",
-    imgURL: "/assets/images/posts/idea.jpg"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_3];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPostCard, {
-    category: "Finance",
-    title: "Investing in indexfunds",
-    author: "Emil Beck Aagaard",
-    date: "last monday",
-    imgURL: "/assets/images/posts/investing.jpg"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPostCard, {
-    category: "Programming",
-    title: "The VITL tech stack",
-    author: "Emil Beck Aagaard",
-    date: "1 hour ago",
-    imgURL: "/assets/images/posts/programming.jpg"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_5];
-    }),
-    _: 1
-    /* STABLE */
-
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPostCard, {
-    category: "Studying",
-    title: "How to learn fast",
-    author: "Emil Beck Aagaard",
-    date: "08/06/2021",
-    imgURL: "/assets/images/posts/study.jpg"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_6];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]);
+    }, 1032
+    /* PROPS, DYNAMIC_SLOTS */
+    , ["category", "category_color", "title", "author", "date", "slug"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))]);
 }
 
 /***/ }),

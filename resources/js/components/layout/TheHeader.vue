@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-white dark:bg-slate-900 text-black dark:text-slate-200 z-50 sticky top-0"
+    class="bg-white dark:bg-slate-900 text-black dark:text-white z-50 sticky top-0"
   >
     <div class="container flex items-center justify-between py-4">
       <div class="flex-none">EBAdev - logo</div>

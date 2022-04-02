@@ -16,7 +16,6 @@
 
 <h2>Homepage</h2>
 <ul>
-<li> Make horizontal posts scroller reflect DB.</li>
 <li> Add Experience section.</li>
 <li> Make newsletter signup possible.</li>
 </ul>

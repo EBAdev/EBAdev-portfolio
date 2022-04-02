@@ -2,55 +2,23 @@
   <div class="flex snap-x snap-mandatory overflow-x-auto">
     <!-- Posts card Components-->
     <AppPostCard
-      category="Firefighting"
-      title="My life in the DEMA"
-      author="Emil Beck Aagaard"
-      date="today"
-      imgURL="/assets/images/posts/firefighter.jpg"
-    >
-      This is a quick summary
-    </AppPostCard>
-    <AppPostCard
-      category="Project development"
-      title="Brainstorming"
-      author="Emil Beck Aagaard"
-      date="last wednesday"
-      imgURL="/assets/images/posts/idea.jpg"
-    >
-      This is a quick summary
-    </AppPostCard>
-    <AppPostCard
-      category="Finance"
-      title="Investing in indexfunds"
-      author="Emil Beck Aagaard"
-      date="last monday"
-      imgURL="/assets/images/posts/investing.jpg"
-    >
-      This is a quick summary
-    </AppPostCard>
-    <AppPostCard
-      category="Programming"
-      title="The VITL tech stack"
-      author="Emil Beck Aagaard"
-      date="1 hour ago"
-      imgURL="/assets/images/posts/programming.jpg"
-    >
-      This is a quick summary
-    </AppPostCard>
-    <AppPostCard
-      category="Studying"
-      title="How to learn fast"
-      author="Emil Beck Aagaard"
-      date="08/06/2021"
+      v-for="post in posts"
+      :key="post.id"
+      :category="post.category"
+      :category_color="post.category_color"
+      :title="post.title"
+      :author="post.author"
+      :date="post.date"
+      :slug="post.slug"
       imgURL="/assets/images/posts/study.jpg"
+      >{{ post.excerpt }}</AppPostCard
     >
-      This is a quick summary
-    </AppPostCard>
   </div>
 </template>
 <script>
-import AppPostCard from "@ui/AppPostCard";
+import AppPostCard from '@ui/AppPostCard'
 export default {
+  props: { posts: Array },
   components: { AppPostCard },
-};
+}
 </script>

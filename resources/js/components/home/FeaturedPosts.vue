@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <PostsHorizontal />
+    <PostsHorizontal v-bind:posts="posts" />
 
     <!-- Newsletter  Component-->
     <NewsletterSignup />
@@ -27,6 +27,8 @@ import PostsHorizontal from '@homeComponents/PostsHorizontal'
 import NewsletterSignup from '@homeComponents/NewsletterSignup'
 export default {
   components: { PostsHorizontal, NewsletterSignup },
+  props: { posts: Array },
 }
+
 </script>
 <style lang=""></style>

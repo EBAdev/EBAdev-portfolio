@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "bg-white dark:bg-slate-900 text-black dark:text-slate-200 z-50 sticky top-0"
+  "class": "bg-white dark:bg-slate-900 text-black dark:text-white z-50 sticky top-0"
 };
 var _hoisted_2 = {
   "class": "container flex items-center justify-between py-4"

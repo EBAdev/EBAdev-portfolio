@@ -22,7 +22,23 @@ use function PHPSTORM_META\map;
 
 
 Route::get('/', function () {
-    return inertia('HomePage/Index');
+    return inertia('HomePage/Index',[
+      'posts' => Post::query()
+      ->latest('published_at')
+      ->with('author','category')
+      ->take(8)
+      ->get()
+      ->map(fn($post) =>[
+        'id' => $post->id,
+        'title' => strip_tags($post->title),
+        'slug' => $post->slug,
+        'excerpt' => $post->excerpt,
+        'date' => $post->created_at->diffForHumans(),
+        'author' => $post->author->name,
+        'category' => $post->category->name,
+        'category_color' => $post->category->hex,
+      ]),
+    ]);
 });
 Route::get('/posts', function () {
   //TODO filter through more stuff than only title with search

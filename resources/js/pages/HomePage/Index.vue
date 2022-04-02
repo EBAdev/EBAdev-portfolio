@@ -1,7 +1,7 @@
 <template lang="">
   <Head title="EBAdev - Home" />
   <HeroSection />
-  <FeaturedPosts />
+  <FeaturedPosts v-bind:posts="posts" />
   <MyExperience />
 </template>
 
@@ -15,5 +15,6 @@ export default {
     FeaturedPosts,
     MyExperience,
   },
+  props: { posts: Array },
 }
 </script>
