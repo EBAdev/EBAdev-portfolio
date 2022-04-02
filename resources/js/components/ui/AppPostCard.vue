@@ -53,7 +53,7 @@
   </Link>
 </template>
 <script>
-//TODO ADD responsive design to mobile and featured views. Make links work
+//TODO make links to categories and author work
 import CategoryButton from './AppCategoryButton'
 export default {
   components: {
