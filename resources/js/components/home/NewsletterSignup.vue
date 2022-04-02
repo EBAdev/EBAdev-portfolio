@@ -1,7 +1,7 @@
 <template lang="">
   <div class="flex flex-col items-center">
     <div class="flex flex-col p-4">
-      <h1 class="tracking-wider text-center text-blue-600 text-2xl">
+      <h1 class="tracking-wider text-center text-blue-500 text-2xl">
         Sign up for my newsletter,
       </h1>
       <h2
@@ -13,7 +13,7 @@
     <div class="flex mb-10">
       <input
         type="email"
-        class="w-80 px-4 border-0 border-b-2 border-gray-200 dark:border-gray-700 dark:focus:border-white focus:ring-0 focus:border-black bg-slate-100 dark:bg-slate-800 h-10 dark:text-white"
+        class="w-80 px-4 border-0 border-b-2 border-gray-200 dark:border-gray-700 dark:focus:border-white focus:ring-0 focus:border-black bg-slate-100 dark:bg-slate-900 h-10 dark:text-white"
         placeholder="Enter your email"
       />
       <button

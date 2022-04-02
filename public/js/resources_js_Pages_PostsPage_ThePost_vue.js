@@ -184,8 +184,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
     category_color: $props.post.category_color,
     href: 'categories/' + $props.post.category,
-    text_large: true,
-    "class": ""
+    text_large: true
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.post.category), 1
@@ -223,7 +222,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["font-medium", [{
       'text-xl': $props.text_large
     }, {
-      'text-sm': !$props.text_large
+      'text-base': !$props.text_large
     }]]),
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
       color: $props.category_color

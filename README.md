@@ -9,7 +9,6 @@
 
 <h2>Posts page</h2>
 <ul>
-<li> Update AppPostCard design. (Tailwind typography) </li>
 <li> Add filtering to posts page.</li>
 <li> Search through more stuff than only title with search.</li>
 </ul>
@@ -22,7 +21,6 @@
 <h2>Layout</h2>
 <ul>
 <li> Add mobile navigation.</li>
-<li> Add EBAdev logo.</li>
 </ul>
 
 <h2>About page</h2>

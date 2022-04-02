@@ -1,5 +1,7 @@
 <template lang="">
-  <div class="flex snap-x snap-mandatory overflow-x-auto">
+  <div
+    class="snap-x snap-mandatory flex flex-row overflow-x-auto pb-8 space-x-4"
+  >
     <!-- Posts card Components-->
     <AppPostCard
       v-for="post in posts"

@@ -23,7 +23,6 @@
             v-bind:category_color="post.category_color"
             v-bind:href="'categories/' + post.category"
             :text_large="true"
-            class=""
           >
             {{ post.category }}
           </CategoryButton>

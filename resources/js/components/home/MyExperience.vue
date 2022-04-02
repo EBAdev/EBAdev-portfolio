@@ -30,7 +30,7 @@
         />
         <WorkExperience
           img_path="/images/technologies/DB.jpeg"
-          title="Databases"
+          title="DB design"
         />
         <WorkExperience
           img_path="/images/technologies/mysql.svg"

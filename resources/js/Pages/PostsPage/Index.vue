@@ -3,7 +3,7 @@
   <div class="flex flex-row justify-center w-full">
     <AppSearchbar class="max-w-[45rem]" :search="filters.search" />
   </div>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center space-y-8 pt-4">
     <AppPostCard
       v-for="post in posts.data"
       :key="post.id"

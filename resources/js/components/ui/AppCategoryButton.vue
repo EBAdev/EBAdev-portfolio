@@ -1,7 +1,7 @@
 <template>
   <Link
     class="font-medium"
-    :class="[{ 'text-xl': text_large }, { 'text-sm': !text_large }]"
+    :class="[{ 'text-xl': text_large }, { 'text-base': !text_large }]"
     :style="{ color: category_color }"
   >
     <slot />
