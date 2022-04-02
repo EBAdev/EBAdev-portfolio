@@ -1,6 +1,6 @@
 <template>
   <div
-    class="my-4 md:p-0 p-4 mx-auto prose prose-a:no-underline prose-h3:m-0 prose-img:m-0 prose-h4:text-[#4b5563]"
+    class="my-4 md:p-0 p-4 mx-auto prose prose-slate dark:prose-invert prose-a:no-underline prose-h3:m-0 prose-img:m-0 prose-h4:text-[#475569] dark:prose-h4:text-[#94a3b8]"
   >
     <div class="flex flex-row w-full items-center justify-center">
       <img

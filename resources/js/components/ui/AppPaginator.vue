@@ -13,8 +13,10 @@
       :class="{
         //TODO 'rounded-l-md': (key = 0), and add ... block in the middel
         hidden: !link.url,
-        'z-10 bg-indigo-50 border-indigo-500 text-indigo-600': link.active,
-        'border-gray-300 bg-white text-gray-500 hover:bg-gray-50': !link.active,
+        'z-10 bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-600 dark:text-indigo-300':
+          link.active,
+        'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-300 hover:bg-gray-50 hover:dark:bg-indigo-900':
+          !link.active,
       }"
     />
   </div>

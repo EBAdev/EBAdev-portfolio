@@ -88,7 +88,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_PostAuthorSection = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PostAuthorSection");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "mx-auto text-center sm:text-left md:p-0 p-4 prose prose-img:rounded-xl prose-a:text-blue-500",
+    "class": "mx-auto text-center sm:text-left md:p-0 p-4 prose prose-slate dark:prose-invert prose-img:rounded-xl prose-a:text-blue-500",
     innerHTML: $props.post.title
   }, null, 8
   /* PROPS */
@@ -97,7 +97,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 8
   /* PROPS */
   , ["post"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", {
-    "class": "mx-auto md:p-0 p-6 prose prose-img:rounded-xl prose-a:text-blue-500",
+    "class": "mx-auto md:p-0 p-6 prose prose-slate dark:prose-invert prose-img:rounded-xl prose-a:text-blue-500",
     innerHTML: $props.post.body
   }, null, 8
   /* PROPS */
@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "my-4 md:p-0 p-4 mx-auto prose prose-a:no-underline prose-h3:m-0 prose-img:m-0 prose-h4:text-[#4b5563]"
+  "class": "my-4 md:p-0 p-4 mx-auto prose prose-slate dark:prose-invert prose-a:no-underline prose-h3:m-0 prose-img:m-0 prose-h4:text-[#475569] dark:prose-h4:text-[#94a3b8]"
 };
 var _hoisted_2 = {
   "class": "flex flex-row w-full items-center justify-center"

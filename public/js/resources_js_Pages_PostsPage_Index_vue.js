@@ -285,8 +285,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["relative inline-flex px-4 py-2 items-center border font-medium text-sm", {
         //TODO 'rounded-l-md': (key = 0), and add ... block in the middel
         hidden: !link.url,
-        'z-10 bg-indigo-50 border-indigo-500 text-indigo-600': link.active,
-        'border-gray-300 bg-white text-gray-500 hover:bg-gray-50': !link.active
+        'z-10 bg-indigo-50 dark:bg-indigo-900 border-indigo-500 text-indigo-600 dark:text-indigo-300': link.active,
+        'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-300 hover:bg-gray-50 hover:dark:bg-indigo-900': !link.active
       }])
     }, null, 8
     /* PROPS */
@@ -311,7 +311,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "mx-4 mt-6 mb-10 shrink-0 bg-blue-50 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
+  "class": "mx-4 mt-6 mb-10 shrink-0 dark:text-slate-100 bg-blue-50 dark:bg-slate-800 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl dark:hover:shadow-lg hover:shadow-blue-600/30 dark:hover:shadow-blue-600/50 rounded-md snap-center"
 };
 var _hoisted_2 = {
   "class": "flex w-full"
@@ -331,13 +331,13 @@ var _hoisted_7 = {
 };
 
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-light text-gray-700"
+  "class": "font-light text-gray-700 dark:text-slate-200"
 }, "By ", -1
 /* HOISTED */
 );
 
 var _hoisted_9 = {
-  "class": "font-light text-gray-700"
+  "class": "font-light text-gray-700 dark:text-slate-200"
 };
 var _hoisted_10 = {
   "class": "font-serif text-ellipsis overflow-hidden break-words mb-4 whitespace-pre-wrap mr-4 leading-8"
@@ -382,7 +382,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["category_color", "href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: 'posts/' + $props.slug,
-    "class": "font-serif capitalize font-bold text-2xl mb-2 mr-4 text-neutral-800 tracking-widest"
+    "class": "font-serif capitalize font-bold text-2xl mb-2 mr-4 text-slate-800 dark:text-slate-100 tracking-widest"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.title), 1
@@ -396,7 +396,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: "#",
-    "class": "font-semibold text-md text-gray-700 hover:text-blue-600"
+    "class": "font-semibold text-md text-slate-700 dark:text-slate-200 hover:text-blue-600"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.author), 1
@@ -406,7 +406,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, ", Posted " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, " , Posted " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
   /* TEXT */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: 'posts/' + $props.slug,
@@ -442,7 +442,7 @@ var _hoisted_1 = {
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-gray-500 peer-focus:text-indigo-500"
+  "class": "absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-500 peer-focus:text-indigo-500"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "sm:text-sm"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
@@ -458,7 +458,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     type: "text",
     name: "query",
-    "class": "peer focus:ring-indigo-500 focus:border-indigo-500 hover:placeholder:text-black pr-8 w-full border-gray-300 rounded-md",
+    "class": "peer focus:ring-indigo-500 focus:border-indigo-500 hover:placeholder:text-black dark:hover:placeholder:text-white pr-8 w-full border-slate-300 dark:border-slate-600 rounded-md dark:bg-slate-900 dark:text-white",
     placeholder: "Search?"
   }, null, 512
   /* NEED_PATCH */

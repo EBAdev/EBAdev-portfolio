@@ -1,16 +1,17 @@
 <template>
   <Head title="EBAdev" />
+  <div>
+    <TheHeader />
 
-  <TheHeader />
-
-  <slot />
+    <slot />
+  </div>
 </template>
 
 <script>
-import TheHeader from "./TheHeader";
+import TheHeader from './TheHeader'
 export default {
   components: {
     TheHeader,
   },
-};
+}
 </script>

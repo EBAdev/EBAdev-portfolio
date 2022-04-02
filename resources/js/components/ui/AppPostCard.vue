@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-4 mt-6 mb-10 shrink-0 bg-blue-50 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
+    class="mx-4 mt-6 mb-10 shrink-0 dark:text-slate-100 bg-blue-50 dark:bg-slate-800 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl dark:hover:shadow-lg hover:shadow-blue-600/30 dark:hover:shadow-blue-600/50 rounded-md snap-center"
   >
     <div class="flex w-full">
       <div class="flex w-1/3 m-3 h-72 items-center">
@@ -22,19 +22,21 @@
         </div>
         <Link
           v-bind:href="'posts/' + slug"
-          class="font-serif capitalize font-bold text-2xl mb-2 mr-4 text-neutral-800 tracking-widest"
+          class="font-serif capitalize font-bold text-2xl mb-2 mr-4 text-slate-800 dark:text-slate-100 tracking-widest"
         >
           {{ title }}
         </Link>
         <div class="flex mb-2 font-serif whitespace-pre-wrap">
-          <p class="font-light text-gray-700">By&nbsp;</p>
+          <p class="font-light text-gray-700 dark:text-slate-200">By&nbsp;</p>
           <Link
             href="#"
-            class="font-semibold text-md text-gray-700 hover:text-blue-600"
+            class="font-semibold text-md text-slate-700 dark:text-slate-200 hover:text-blue-600"
           >
             {{ author }}
           </Link>
-          <p class="font-light text-gray-700">,&nbsp;Posted&nbsp;{{ date }}</p>
+          <p class="font-light text-gray-700 dark:text-slate-200">
+            ,&nbsp;Posted&nbsp;{{ date }}
+          </p>
         </div>
         <p
           class="font-serif text-ellipsis overflow-hidden break-words mb-4 whitespace-pre-wrap mr-4 leading-8"

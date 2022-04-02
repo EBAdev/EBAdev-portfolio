@@ -1,5 +1,8 @@
 <template>
-  <Link class="font-medium uppercase" :class="{ ' text-blue-500': active }">
+  <Link
+    class="font-medium uppercase"
+    :class="{ ' text-blue-500 dark:text-blue-600': active }"
+  >
     <slot />
   </Link>
 </template>
@@ -9,5 +12,5 @@ export default {
   props: {
     active: Boolean,
   },
-};
+}
 </script>

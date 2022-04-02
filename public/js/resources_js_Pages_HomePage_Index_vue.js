@@ -205,15 +205,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "bg-gray-100"
+  "class": "bg-slate-100 dark:bg-slate-900"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "container"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "font-moonliteSolid pt-10 mb-4 underline decoration-blue-600 decoration-4 underline-offset-4 text-center text-neutral-800 text-6xl"
+  "class": "font-moonliteSolid pt-10 mb-4 underline decoration-blue-600 dark:decoration-blue-500 decoration-4 underline-offset-4 text-center text-slate-800 dark:text-white text-6xl"
 }, " Featured Blog Posts "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-sans mb-10 text-center text-neutral-800 text-xl"
+  "class": "font-sans mb-10 text-center text-slate-800 dark:text-white text-xl"
 }, " I write a blog now and then, you should definitly read some of my posts! Hope theres something of your liking. ")], -1
 /* HOISTED */
 );
@@ -243,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<img class=\"w-full h-screen -top-20 z-0 object-cover\" src=\"/assets/images/Hero.svg\"><div name=\"Hero\" class=\"container z-10\"><h1 class=\"font-moonliteSolid uppercase text-7xl text-center absolute inset-x-0 bottom-48 font-regular tracking-wider text-white\"> Emil Beck Aagaard </h1><h1 class=\"font-moonliteOutline text-7xl text-center absolute inset-x-0 bottom-32 font-regular tracking-wider animate-type text-white\"> Portfolio </h1><a href=\"#my-work\" class=\"font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-slate-400 hover:text-white flex flex-col\"> My experience <i class=\"fas fa-chevron-down\"></i></a></div>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<img class=\"w-full h-screen -top-20 z-0 object-cover\" src=\"/assets/images/Hero.svg\"><div name=\"Hero\" class=\"container z-10\"><h1 class=\"font-moonliteSolid uppercase text-7xl text-center absolute inset-x-0 bottom-48 font-regular tracking-wider text-white dark:text-slate-200\"> Emil Beck Aagaard </h1><h1 class=\"font-moonliteOutline text-7xl text-center absolute inset-x-0 bottom-32 font-regular tracking-wider text-white dark:text-slate-200\"> Portfolio </h1><a href=\"#my-work\" class=\"font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-slate-400 hover:text-white hover:dark:text-slate-200 flex flex-col\"> My experience <i class=\"fas fa-chevron-down\"></i></a></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Hero section"), _hoisted_1], 2112
@@ -271,13 +271,13 @@ var _hoisted_1 = {
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "font-moonliteSolid mt-10 mb-4 underline decoration-blue-600 decoration-4 underline-offset-4 text-center text-neutral-800 text-6xl"
+  "class": "font-moonliteSolid mt-10 mb-4 underline decoration-blue-600 decoration-4 underline-offset-4 text-center text-slate-800 dark:text-slate-100 text-6xl"
 }, " My past work ", -1
 /* HOISTED */
 );
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-sans mb-10 text-center text-neutral-800 text-xl"
+  "class": "font-sans mb-10 text-center text-slate-800 dark:text-slate-100 text-xl"
 }, " Read more about my past projects, languges that im proficient in, and much more. ", -1
 /* HOISTED */
 );
@@ -305,7 +305,7 @@ var _hoisted_1 = {
   "class": "flex flex-col items-center"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col p-4\"><h1 class=\"tracking-wider text-center text-blue-700 text-2xl\"> Sign up for my newsletter, </h1><h2 class=\"tracking-wider text-center text-neutral-700 text-xl\"> and get notified when i post something new. </h2></div><div class=\"flex mb-10\"><input type=\"email\" class=\"w-80 px-4 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black bg-gray-100 h-10\" placeholder=\"Enter your email\"><button type=\"button\" class=\"p-2 ml-4 hover:bg-neutral-300 text-black rounded-md\"> Submit </button></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col p-4\"><h1 class=\"tracking-wider text-center text-blue-600 text-2xl\"> Sign up for my newsletter, </h1><h2 class=\"tracking-wider text-center text-slate-700 dark:text-slate-200 text-xl\"> and get notified when i post something new. </h2></div><div class=\"flex mb-10\"><input type=\"email\" class=\"w-80 px-4 border-0 border-b-2 border-gray-200 dark:border-gray-700 dark:focus:border-white focus:ring-0 focus:border-black bg-slate-100 dark:bg-slate-800 h-10 dark:text-white\" placeholder=\"Enter your email\"><button type=\"button\" class=\"p-2 ml-4 hover:bg-slate-300 hover:dark:bg-slate-600 text-black dark:text-white rounded-md\"> Submit </button></div>", 2);
 
 var _hoisted_4 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -464,7 +464,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "mx-4 mt-6 mb-10 shrink-0 bg-blue-50 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl hover:shadow-blue-600/30 rounded-md snap-center"
+  "class": "mx-4 mt-6 mb-10 shrink-0 dark:text-slate-100 bg-blue-50 dark:bg-slate-800 max-w-[45rem] h-80 shadow-md transition-all duration-700 hover:shadow-xl dark:hover:shadow-lg hover:shadow-blue-600/30 dark:hover:shadow-blue-600/50 rounded-md snap-center"
 };
 var _hoisted_2 = {
   "class": "flex w-full"
@@ -484,13 +484,13 @@ var _hoisted_7 = {
 };
 
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "font-light text-gray-700"
+  "class": "font-light text-gray-700 dark:text-slate-200"
 }, "By ", -1
 /* HOISTED */
 );
 
 var _hoisted_9 = {
-  "class": "font-light text-gray-700"
+  "class": "font-light text-gray-700 dark:text-slate-200"
 };
 var _hoisted_10 = {
   "class": "font-serif text-ellipsis overflow-hidden break-words mb-4 whitespace-pre-wrap mr-4 leading-8"
@@ -535,7 +535,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["category_color", "href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: 'posts/' + $props.slug,
-    "class": "font-serif capitalize font-bold text-2xl mb-2 mr-4 text-neutral-800 tracking-widest"
+    "class": "font-serif capitalize font-bold text-2xl mb-2 mr-4 text-slate-800 dark:text-slate-100 tracking-widest"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.title), 1
@@ -549,7 +549,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: "#",
-    "class": "font-semibold text-md text-gray-700 hover:text-blue-600"
+    "class": "font-semibold text-md text-slate-700 dark:text-slate-200 hover:text-blue-600"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.author), 1
@@ -559,7 +559,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, ", Posted " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, " , Posted " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
   /* TEXT */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     href: 'posts/' + $props.slug,

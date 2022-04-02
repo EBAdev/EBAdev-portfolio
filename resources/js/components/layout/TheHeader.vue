@@ -1,27 +1,31 @@
 <template>
-  <nav class="bg-white z-50 sticky top-0">
+  <nav
+    class="bg-white dark:bg-slate-900 text-black dark:text-slate-200 z-50 sticky top-0"
+  >
     <div class="container flex items-center justify-between py-4">
       <div class="flex-none">EBAdev - logo</div>
       <div class="hidden sm:flex justify-end items-center md:gap-8 gap-[1rem]">
-        <NavLink href="/" :active="$page.component === 'HomePage/Index'">
+        <NavLink href="/" :active="$page.component.startsWith('HomePage')">
           Home
         </NavLink>
-        <NavLink href="/posts" :active="$page.component === 'PostsPage'"
-          >Posts
-        </NavLink>
-        <NavLink href="/about" :active="$page.component === 'AboutPage'"
-          >About
-        </NavLink>
-        <NavLink href="/contact" :active="$page.component === 'ContactPage'"
-          >Contact
-        </NavLink>
-
-        <button
-          class="px-4 py-2 text-gray-400/50 hover:text-gray-600 hover:bg-gray-400/50 rounded-2xl"
+        <NavLink
+          href="/posts"
+          :active="$page.component.startsWith('PostsPage')"
         >
-          <i class="text-2xl fa-solid fa-moon"></i>
-          <i class="text-2xl fa-regular fa-sun hidden"></i>
-        </button>
+          Posts
+        </NavLink>
+        <NavLink
+          href="/about"
+          :active="$page.component.startsWith('AboutPage')"
+        >
+          About
+        </NavLink>
+        <NavLink
+          href="/contact"
+          :active="$page.component.startsWith('ContactPage')"
+        >
+          Contact
+        </NavLink>
 
         <button
           type="button"
