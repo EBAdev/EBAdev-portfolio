@@ -18,7 +18,7 @@
 
     <a
       href="#my-work"
-      class="font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-gray-400 hover:text-white flex flex-col"
+      class="font-moonliteSolid text-2xl text-center absolute inset-x-0 bottom-4 font-light motion-safe:animate-bounce-slow tracking-wider text-gray-400 hover:text-white flex flex-col scroll-smooth"
     >
       My experience
       <i class="fas fa-chevron-down"></i

@@ -16,7 +16,6 @@
 
 <h2>Homepage</h2>
 <ul>
-<li> Add Experience section.</li>
 <li> Make newsletter signup possible.</li>
 </ul>
 
@@ -24,7 +23,6 @@
 <ul>
 <li> Add mobile navigation.</li>
 <li> Add EBAdev logo.</li>
-<li> Add darkmode support for the app.</li>
 </ul>
 
 <h2>About page</h2>
