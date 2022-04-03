@@ -186,6 +186,7 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     category: String,
     category_color: String,
+    category_slug: String,
     title: String,
     author: String,
     date: String,
@@ -401,6 +402,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       key: post.id,
       category: post.category,
       category_color: post.category_color,
+      category_slug: post.category_slug,
       title: post.title,
       author: post.author,
       date: post.date,
@@ -417,7 +419,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["category", "category_color", "title", "author", "date", "slug"]);
+    , ["category", "category_color", "category_slug", "title", "author", "date", "slug"]);
   }), 128
   /* KEYED_FRAGMENT */
   ))]);
@@ -556,12 +558,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_Link, {
     "class": "snap-center snap-always shrink-0 p-4 z-20 flex justify-center px-4 text-center sm:text-left",
-    href: 'posts/' + $props.slug
+    href: '/posts/' + $props.slug
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
         category_color: $props.category_color,
-        href: 'categories/' + $props.category,
+        href: '/categories/' + $props.category_slug,
         text_large: false,
         "class": "sm:hidden block text-center"
       }, {
@@ -581,7 +583,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* TEXT */
       ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
         category_color: $props.category_color,
-        href: 'categories/' + $props.category,
+        href: '/categories/' + $props.category_slug,
         text_large: false,
         "class": "sm:pr-4 text-left hidden sm:block"
       }, {

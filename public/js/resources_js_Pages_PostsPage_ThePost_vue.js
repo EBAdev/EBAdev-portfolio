@@ -183,7 +183,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
     category_color: $props.post.category_color,
-    href: 'categories/' + $props.post.category,
+    href: '/categories/' + $props.post.category_slug,
     text_large: true
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {

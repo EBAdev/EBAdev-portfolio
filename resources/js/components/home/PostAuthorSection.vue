@@ -21,7 +21,7 @@
 
           <CategoryButton
             v-bind:category_color="post.category_color"
-            v-bind:href="'categories/' + post.category"
+            v-bind:href="'/categories/' + post.category_slug"
             :text_large="true"
           >
             {{ post.category }}

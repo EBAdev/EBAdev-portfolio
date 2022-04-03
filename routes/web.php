@@ -59,6 +59,7 @@ Route::get('/posts', function () {
         'author' => $post->author->name,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
+        'category_slug' => $post->category->slug,
       ]),
       'filters'  => Request::only(['search'])
     ]);
@@ -74,9 +75,34 @@ Route::get('/posts/{post:slug}', function (Post $post) {
         'author' => $post->author->name,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
+        'category_slug' => $post->category->slug,
       ]
     ]);
   });
+
+Route::get('/categories/{category:slug}', function (Category $category) {
+  return inertia('PostsPage/Index',[
+    'posts' => $category->posts()
+    ->with('author','category')
+    ->when(Request::input('search'), function ($query, $search){
+      $query->where('title','like',"%{$search}%");
+    })
+    ->paginate(6)
+    ->withQueryString()
+    ->through(fn($post) =>[
+      'id' => $post->id,
+      'title' => strip_tags($post->title),
+      'slug' => $post->slug,
+      'excerpt' => $post->excerpt,
+      'date' => $post->created_at->diffForHumans(),
+      'author' => $post->author->name,
+      'category' => $post->category->name,
+      'category_color' => $post->category->hex,
+      'category_slug' => $post->category->slug,
+    ]),
+    'filters'  => Request::only(['search'])
+  ]);
+});
 
 Route::get('/about', function () {
     return inertia('AboutPage');

@@ -1,7 +1,7 @@
 <template>
   <Link
     class="snap-center snap-always shrink-0 p-4 z-20 flex justify-center px-4 text-center sm:text-left"
-    v-bind:href="'posts/' + slug"
+    v-bind:href="'/posts/' + slug"
   >
     <div
       class="flex flex-col md:flex-row md:max-w-2xl sm:max-w-md max-w-xs rounded-lg bg-white dark:bg-slate-800 shadow-xl hover:shadow-blue-700/30 transition-shadow duration-500"
@@ -14,7 +14,7 @@
       <div class="sm:p-6 pt-2 pb-4 px-4 flex flex-col justify-start">
         <CategoryButton
           v-bind:category_color="category_color"
-          v-bind:href="'categories/' + category"
+          v-bind:href="'/categories/' + category_slug"
           :text_large="false"
           class="sm:hidden block text-center"
         >
@@ -29,7 +29,7 @@
           </p>
           <CategoryButton
             v-bind:category_color="category_color"
-            v-bind:href="'categories/' + category"
+            v-bind:href="'/categories/' + category_slug"
             :text_large="false"
             class="sm:pr-4 text-left hidden sm:block"
           >
@@ -62,6 +62,7 @@ export default {
   props: {
     category: String,
     category_color: String,
+    category_slug: String,
     title: String,
     author: String,
     date: String,

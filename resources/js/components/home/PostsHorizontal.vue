@@ -8,6 +8,7 @@
       :key="post.id"
       :category="post.category"
       :category_color="post.category_color"
+      :category_slug="post.category_slug"
       :title="post.title"
       :author="post.author"
       :date="post.date"
