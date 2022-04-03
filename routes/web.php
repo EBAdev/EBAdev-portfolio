@@ -37,6 +37,7 @@ Route::get('/', function () {
         'author' => $post->author->name,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
+        'category_slug' => $post->category->slug,
       ]),
     ]);
 });
