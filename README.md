@@ -3,7 +3,6 @@
 <h2>Backend</h2>
 <ul>
 <li> Add many-to-many relation between posts and categories.</li>
-<li> Add rounting to categories page.</li>
 <li> Add routing to author page.</li>
 </ul>
 
