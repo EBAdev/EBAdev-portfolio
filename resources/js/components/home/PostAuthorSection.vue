@@ -12,11 +12,19 @@
       <div class="flex flex-col sm:w-full text-center pl-4 sm:text-left">
         <div class="flex sm:flex-row flex-col-reverse">
           <h3 class="hidden sm:block sm:w-full">
-            Written by&nbsp;<Link href="#">{{ post.author }},</Link>
+            Written by&nbsp;<Link
+              class="hover:text-blue-500"
+              :href="'/authors/' + post.author_id"
+              >{{ post.author }},</Link
+            >
           </h3>
 
           <h3 class="sm:hidden block">
-            By&nbsp;<Link href="#">{{ post.author }},</Link>
+            By&nbsp;<Link
+              class="hover:text-blue-500"
+              :href="'/authors/' + post.author_id"
+              >{{ post.author }},</Link
+            >
           </h3>
 
           <CategoryButton

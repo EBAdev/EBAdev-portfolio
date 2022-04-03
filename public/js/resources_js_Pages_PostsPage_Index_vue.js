@@ -92,6 +92,7 @@ __webpack_require__.r(__webpack_exports__);
     category_slug: String,
     title: String,
     author: String,
+    author_id: String,
     date: String,
     imgURL: String,
     slug: String
@@ -196,6 +197,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       category_slug: post.category_slug,
       title: post.title,
       author: post.author,
+      author_id: post.author_id,
       date: post.date,
       slug: post.slug,
       imgURL: "/assets/images/posts/study.jpg"
@@ -210,7 +212,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["category", "category_color", "category_slug", "title", "author", "date", "slug"]);
+    , ["category", "category_color", "category_slug", "title", "author", "author_id", "date", "slug"]);
   }), 128
   /* KEYED_FRAGMENT */
   )), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppPaginator, {
@@ -336,14 +338,17 @@ var _hoisted_5 = {
 var _hoisted_6 = {
   "class": "text-slate-700 dark:text-slate-200 text-base sm:mb-4"
 };
-var _hoisted_7 = {
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Written by ");
+
+var _hoisted_8 = {
   "class": "text-slate-700 dark:text-slate-200 text-base mb-4 text-left"
 };
-var _hoisted_8 = {
+var _hoisted_9 = {
   "class": "flex flex-row-reverse justify-between items-center"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "text-blue-500 flex items-center justify-end"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Read more "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ml-2 fas fa-arrow-right"
@@ -351,7 +356,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_10 = {
+var _hoisted_11 = {
   "class": "text-slate-600 dark:text-slate-300 text-xs"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -382,9 +387,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["category_color", "href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.title), 1
       /* TEXT */
-      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_6, " Written by " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.author), 1
-      /* TEXT */
-      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+        "class": "hover:text-blue-500",
+        href: '/authors/' + $props.author_id
+      }, {
+        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.author), 1
+          /* TEXT */
+          )];
+        }),
+        _: 1
+        /* STABLE */
+
+      }, 8
+      /* PROPS */
+      , ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CategoryButton, {
         category_color: $props.category_color,
         href: '/categories/' + $props.category_slug,
         text_large: false,
@@ -400,7 +417,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       }, 8
       /* PROPS */
-      , ["category_color", "href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_10, " Last updated " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
+      , ["category_color", "href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_11, " Last updated " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.date), 1
       /* TEXT */
       )])])])];
     }),

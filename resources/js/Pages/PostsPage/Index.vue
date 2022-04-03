@@ -12,6 +12,7 @@
       :category_slug="post.category_slug"
       :title="post.title"
       :author="post.author"
+      :author_id="post.author_id"
       :date="post.date"
       :slug="post.slug"
       imgURL="/assets/images/posts/study.jpg"

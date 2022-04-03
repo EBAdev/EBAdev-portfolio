@@ -35,6 +35,7 @@ Route::get('/', function () {
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
+        'author_id' => $post->author->id,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -46,6 +47,7 @@ Route::get('/posts', function () {
     return inertia('PostsPage/Index',[
       'posts' => Post::query()
       ->with('author','category')
+      ->latest('published_at')
       ->when(Request::input('search'), function ($query, $search){
         $query->where('title','like',"%{$search}%");
       })
@@ -58,6 +60,7 @@ Route::get('/posts', function () {
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
+        'author_id' => $post->author->id,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -74,6 +77,7 @@ Route::get('/posts/{post:slug}', function (Post $post) {
         'body' => $post->body,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
+        'author_id' => $post->author->id,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -85,6 +89,7 @@ Route::get('/categories/{category:slug}', function (Category $category) {
   return inertia('PostsPage/Index',[
     'posts' => $category->posts()
     ->with('author','category')
+    ->latest('published_at')
     ->when(Request::input('search'), function ($query, $search){
       $query->where('title','like',"%{$search}%");
     })
@@ -97,6 +102,33 @@ Route::get('/categories/{category:slug}', function (Category $category) {
       'excerpt' => $post->excerpt,
       'date' => $post->created_at->diffForHumans(),
       'author' => $post->author->name,
+      'author_id' => $post->author->id,
+      'category' => $post->category->name,
+      'category_color' => $post->category->hex,
+      'category_slug' => $post->category->slug,
+    ]),
+    'filters'  => Request::only(['search'])
+  ]);
+});
+
+Route::get('/authors/{author}', function (User $author) {
+  return inertia('PostsPage/Index',[
+    'posts' => $author->posts()
+    ->with('author','category')
+    ->latest('published_at')
+    ->when(Request::input('search'), function ($query, $search){
+      $query->where('title','like',"%{$search}%");
+    })
+    ->paginate(6)
+    ->withQueryString()
+    ->through(fn($post) =>[
+      'id' => $post->id,
+      'title' => strip_tags($post->title),
+      'slug' => $post->slug,
+      'excerpt' => $post->excerpt,
+      'date' => $post->created_at->diffForHumans(),
+      'author' => $post->author->name,
+      'author_id' => $post->author->id,
       'category' => $post->category->name,
       'category_color' => $post->category->hex,
       'category_slug' => $post->category->slug,

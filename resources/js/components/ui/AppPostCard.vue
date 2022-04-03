@@ -25,7 +25,10 @@
         </h5>
         <div class="flex flex-col sm:flex-row justify-between">
           <p class="text-slate-700 dark:text-slate-200 text-base sm:mb-4">
-            Written by {{ author }}
+            Written by
+            <Link class="hover:text-blue-500" :href="'/authors/' + author_id">{{
+              author
+            }}</Link>
           </p>
           <CategoryButton
             v-bind:category_color="category_color"
@@ -65,6 +68,7 @@ export default {
     category_slug: String,
     title: String,
     author: String,
+    author_id: String,
     date: String,
     imgURL: String,
     slug: String,
