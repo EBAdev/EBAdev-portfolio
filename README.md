@@ -8,7 +8,6 @@
 <h2>Posts page</h2>
 <ul>
 <li> Add filtering ui to posts page.</li>
-<li> Search through more stuff than only title with search.</li>
 </ul>
 
 <h2>Homepage</h2>
