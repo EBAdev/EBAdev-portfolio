@@ -1,23 +1,10 @@
 <template>
   <Head title="EBAdev - Posts" />
-  <div class="flex flex-row justify-center w-full">
+  <div class="flex w-full flex-row justify-center">
     <AppSearchbar class="max-w-[45rem]" :search="filters.search" />
   </div>
   <div class="flex flex-col items-center space-y-8 pt-4">
-    <AppPostCard
-      v-for="post in posts.data"
-      :key="post.id"
-      :category="post.category"
-      :category_color="post.category_color"
-      :category_slug="post.category_slug"
-      :title="post.title"
-      :author="post.author"
-      :author_id="post.author_id"
-      :date="post.date"
-      :slug="post.slug"
-      imgURL="/assets/images/posts/study.jpg"
-      >{{ post.excerpt }}</AppPostCard
-    >
+    <AppPostCard v-for="post in posts.data" :key="post.id" :post="post" />
 
     <AppPaginator :links="posts.links" />
   </div>
@@ -34,6 +21,9 @@ export default {
     AppPaginator,
     AppSearchbar,
   },
-  props: { posts: Object, filters: Object },
+  props: {
+    posts: { type: Object, required: true },
+    filters: { type: Object, required: true },
+  },
 }
 </script>

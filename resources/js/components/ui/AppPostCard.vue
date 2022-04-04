@@ -1,54 +1,57 @@
 <template>
   <Link
-    class="snap-center snap-always shrink-0 p-4 z-20 flex justify-center px-4 text-center sm:text-left"
-    v-bind:href="'/posts/' + slug"
+    class="z-20 flex shrink-0 snap-center snap-always justify-center p-4 px-4 text-center sm:text-left"
+    :href="'/posts/' + post.slug"
   >
     <div
-      class="flex flex-col md:flex-row md:max-w-2xl sm:max-w-md max-w-xs rounded-lg bg-white dark:bg-slate-800 shadow-xl hover:shadow-blue-700/30 transition-shadow duration-500"
+      class="flex max-w-xs flex-col rounded-lg bg-white shadow-xl transition-shadow duration-500 hover:shadow-blue-700/30 dark:bg-slate-800 sm:max-w-md md:max-w-2xl md:flex-row"
     >
       <img
-        class="h-52 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+        class="h-52 rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
         src="/images/firefighter.jpg"
         alt=""
       />
-      <div class="sm:p-6 pt-2 pb-4 px-4 flex flex-col justify-start">
+      <div class="flex flex-col justify-start px-4 pt-2 pb-4 sm:p-6">
         <CategoryButton
-          v-bind:category_color="category_color"
-          v-bind:href="'/categories/' + category_slug"
-          :text_large="false"
-          class="sm:hidden block text-center"
+          :category-color="post.category_color"
+          :href="'/categories/' + post.category_slug"
+          :text-large="false"
+          class="block text-center sm:hidden"
         >
-          {{ category }}
+          {{ post.category }}
         </CategoryButton>
-        <h5 class="text-slate-900 dark:text-white text-xl font-medium mb-2">
-          {{ title }}
+        <h5 class="mb-2 text-xl font-medium text-slate-900 dark:text-white">
+          {{ post.title }}
         </h5>
-        <div class="flex flex-col sm:flex-row justify-between">
-          <p class="text-slate-700 dark:text-slate-200 text-base sm:mb-4">
+        <div class="flex flex-col justify-between sm:flex-row">
+          <p class="text-base text-slate-700 dark:text-slate-200 sm:mb-4">
             Written by
-            <Link class="hover:text-blue-500" :href="'/authors/' + author_id">{{
-              author
-            }}</Link>
+            <Link
+              class="hover:text-blue-500"
+              :href="'/authors/' + post.author_username"
+            >
+              {{ post.author }}
+            </Link>
           </p>
           <CategoryButton
-            v-bind:category_color="category_color"
-            v-bind:href="'/categories/' + category_slug"
-            :text_large="false"
-            class="sm:pr-4 text-left hidden sm:block"
+            :category-color="post.category_color"
+            :href="'/categories/' + post.category_slug"
+            :text-large="false"
+            class="hidden text-left sm:block sm:pr-4"
           >
-            {{ category }}
+            {{ post.category }}
           </CategoryButton>
         </div>
-        <p class="text-slate-700 dark:text-slate-200 text-base mb-4 text-left">
-          <slot />
+        <p class="mb-4 text-left text-base text-slate-700 dark:text-slate-200">
+          {{ post.excerpt }}
         </p>
-        <div class="flex flex-row-reverse justify-between items-center">
-          <div class="text-blue-500 flex items-center justify-end">
+        <div class="flex flex-row-reverse items-center justify-between">
+          <div class="flex items-center justify-end text-blue-500">
             Read more
-            <i class="ml-2 fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-right ml-2"></i>
           </div>
-          <p class="text-slate-600 dark:text-slate-300 text-xs">
-            Last updated {{ date }}
+          <p class="text-xs text-slate-600 dark:text-slate-300">
+            Last updated {{ post.date }}
           </p>
         </div>
       </div>
@@ -56,22 +59,16 @@
   </Link>
 </template>
 <script>
-//TODO make links to categories and author work
 import CategoryButton from './AppCategoryButton'
 export default {
   components: {
     CategoryButton,
   },
   props: {
-    category: String,
-    category_color: String,
-    category_slug: String,
-    title: String,
-    author: String,
-    author_id: String,
-    date: String,
-    imgURL: String,
-    slug: String,
+    post: {
+      type: Object,
+      required: true,
+    },
   },
 }
 </script>

@@ -1,17 +1,17 @@
 <template>
   <nav
-    class="bg-white dark:bg-slate-900 text-black dark:text-white z-50 sticky top-0"
+    class="sticky top-0 z-50 bg-white text-black dark:bg-slate-900 dark:text-white"
   >
     <div class="container flex items-center justify-between py-4">
       <a href="/" class="flex-none">
-        <i class="text-2xl fa-solid fa-laptop mr-4"></i>
+        <i class="fa-solid fa-laptop mr-4 text-2xl"></i>
         <span
-          class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
         >
           EBAdev
         </span>
       </a>
-      <div class="hidden sm:flex justify-end items-center md:gap-8 gap-[1rem]">
+      <div class="hidden items-center justify-end gap-[1rem] sm:flex md:gap-8">
         <NavLink href="/" :active="$page.component.startsWith('HomePage')">
           Home
         </NavLink>
@@ -36,13 +36,13 @@
 
         <button
           type="button"
-          class="hover:bg-blue-600 ring font-medium ring-slate-100 dark:ring-slate-800 hover:ring-0 dark:text-white hover:text-white rounded-md px-6 py-2 uppercase"
+          class="rounded-md px-6 py-2 font-medium uppercase ring ring-slate-100 hover:bg-blue-600 hover:text-white hover:ring-0 dark:text-white dark:ring-slate-800"
         >
           Sign Up
         </button>
       </div>
-      <div class="flex sm:hidden flex-1 justify-end">
-        <i class="text-2xl fas fa-bars"></i>
+      <div class="flex flex-1 justify-end sm:hidden">
+        <i class="fas fa-bars text-2xl"></i>
       </div>
     </div>
   </nav>

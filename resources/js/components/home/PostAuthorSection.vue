@@ -1,41 +1,41 @@
 <template>
   <div
-    class="my-4 md:p-0 p-4 mx-auto prose prose-slate dark:prose-invert prose-a:no-underline prose-h3:m-0 prose-img:m-0 prose-h4:text-[#475569] dark:prose-h4:text-[#94a3b8]"
+    class="prose prose-slate my-4 mx-auto p-4 prose-h3:m-0 prose-h4:text-[#475569] prose-a:no-underline prose-img:m-0 dark:prose-invert dark:prose-h4:text-[#94a3b8] md:p-0"
   >
-    <div class="flex flex-row w-full items-center justify-center">
+    <div class="flex w-full flex-row items-center justify-center">
       <img
         src="/assets/images/posts/firefighter.jpg"
         alt="profile picture"
-        class="rounded-full object-cover aspect-square h-20"
+        class="aspect-square h-20 rounded-full object-cover"
       />
 
-      <div class="flex flex-col sm:w-full text-center pl-4 sm:text-left">
-        <div class="flex sm:flex-row flex-col-reverse">
+      <div class="flex flex-col pl-4 text-center sm:w-full sm:text-left">
+        <div class="flex flex-col-reverse sm:flex-row">
           <h3 class="hidden sm:block sm:w-full">
             Written by&nbsp;<Link
               class="hover:text-blue-500"
-              :href="'/authors/' + post.author_id"
+              :href="'/authors/' + post.author_username"
               >{{ post.author }},</Link
             >
           </h3>
 
-          <h3 class="sm:hidden block">
+          <h3 class="block sm:hidden">
             By&nbsp;<Link
               class="hover:text-blue-500"
-              :href="'/authors/' + post.author_id"
+              :href="'/authors/' + post.author_username"
               >{{ post.author }},</Link
             >
           </h3>
 
           <CategoryButton
-            v-bind:category_color="post.category_color"
-            v-bind:href="'/categories/' + post.category_slug"
-            :text_large="true"
+            :category-color="post.category_color"
+            :href="'/categories/' + post.category_slug"
+            :text-large="true"
           >
             {{ post.category }}
           </CategoryButton>
         </div>
-        <h4 class="sm:ml-6 mt-0">posted&nbsp;{{ post.date }}&nbsp;</h4>
+        <h4 class="mt-0 sm:ml-6">posted&nbsp;{{ post.date }}&nbsp;</h4>
       </div>
     </div>
   </div>
@@ -44,11 +44,14 @@
 <script>
 import CategoryButton from '@ui/AppCategoryButton'
 export default {
-  props: {
-    post: Object,
-  },
   components: {
     CategoryButton,
+  },
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    },
   },
 }
 </script>

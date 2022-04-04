@@ -1,16 +1,19 @@
 <template>
   <Link
     class="font-medium"
-    :class="[{ 'text-xl': text_large }, { 'text-base': !text_large }]"
-    :style="{ color: category_color }"
+    :class="[{ 'text-xl': textLarge }, { 'text-base': !textLarge }]"
+    :style="{ color: categoryColor }"
   >
     <slot />
   </Link>
 </template>
 
 <script>
-//TODO: make color change by hover. Make text-size responsive to given space
+//TODO: make color change by hover.
 export default {
-  props: { category_color: String, text_large: Boolean },
+  props: {
+    categoryColor: { type: String, required: true },
+    textLarge: Boolean,
+  },
 }
 </script>

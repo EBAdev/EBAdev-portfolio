@@ -1,28 +1,19 @@
 <template lang="">
   <div
-    class="snap-x snap-mandatory flex flex-row overflow-x-auto pb-8 space-x-4"
+    class="flex snap-x snap-mandatory flex-row space-x-4 overflow-x-auto pb-8"
   >
-    <!-- Posts card Components-->
-    <AppPostCard
-      v-for="post in posts"
-      :key="post.id"
-      :category="post.category"
-      :category_color="post.category_color"
-      :category_slug="post.category_slug"
-      :title="post.title"
-      :author="post.author"
-      :author_id="post.author_id"
-      :date="post.date"
-      :slug="post.slug"
-      imgURL="/assets/images/posts/study.jpg"
-      >{{ post.excerpt }}</AppPostCard
-    >
+    <AppPostCard v-for="p in posts" :key="p.id" :post="p" />
   </div>
 </template>
 <script>
 import AppPostCard from '@ui/AppPostCard'
 export default {
-  props: { posts: Array },
   components: { AppPostCard },
+  props: {
+    posts: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>

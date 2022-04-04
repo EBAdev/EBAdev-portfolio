@@ -35,7 +35,7 @@ Route::get('/', function () {
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
-        'author_id' => $post->author->id,
+        'author_username' => $post->author->username,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -60,7 +60,7 @@ Route::get('/posts', function () {
         'excerpt' => $post->excerpt,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
-        'author_id' => $post->author->id,
+        'author_username' => $post->author->username,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -77,7 +77,7 @@ Route::get('/posts/{post:slug}', function (Post $post) {
         'body' => $post->body,
         'date' => $post->created_at->diffForHumans(),
         'author' => $post->author->name,
-        'author_id' => $post->author->id,
+        'author_username' => $post->author->username,
         'category' => $post->category->name,
         'category_color' => $post->category->hex,
         'category_slug' => $post->category->slug,
@@ -102,7 +102,7 @@ Route::get('/categories/{category:slug}', function (Category $category) {
       'excerpt' => $post->excerpt,
       'date' => $post->created_at->diffForHumans(),
       'author' => $post->author->name,
-      'author_id' => $post->author->id,
+      'author_username' => $post->author->username,
       'category' => $post->category->name,
       'category_color' => $post->category->hex,
       'category_slug' => $post->category->slug,
@@ -111,7 +111,7 @@ Route::get('/categories/{category:slug}', function (Category $category) {
   ]);
 });
 
-Route::get('/authors/{author}', function (User $author) {
+Route::get('/authors/{author:username}', function (User $author) {
   return inertia('PostsPage/Index',[
     'posts' => $author->posts()
     ->with('author','category')
@@ -128,7 +128,7 @@ Route::get('/authors/{author}', function (User $author) {
       'excerpt' => $post->excerpt,
       'date' => $post->created_at->diffForHumans(),
       'author' => $post->author->name,
-      'author_id' => $post->author->id,
+      'author_username' => $post->author->username,
       'category' => $post->category->name,
       'category_color' => $post->category->hex,
       'category_slug' => $post->category->slug,
