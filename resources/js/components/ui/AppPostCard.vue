@@ -1,6 +1,6 @@
 <template>
   <Link
-    class="z-20 flex shrink-0 snap-center snap-always justify-center p-4 px-4 text-center sm:text-left"
+    class="z-10 flex shrink-0 snap-center snap-always justify-center p-4 px-4 text-center sm:text-left"
     :href="'/posts/' + post.slug"
   >
     <div

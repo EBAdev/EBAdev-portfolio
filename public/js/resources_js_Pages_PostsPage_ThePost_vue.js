@@ -94,9 +94,13 @@ var _hoisted_1 = {
 var _hoisted_2 = ["innerHTML"];
 var _hoisted_3 = ["innerHTML"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+
   var _component_PostAuthorSection = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PostAuthorSection");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" eslint-disable vue/no-v-html "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" eslint-disable vue/no-v-html "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "EBAdev - Posts"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "prose prose-slate mx-auto p-4 text-center prose-a:text-blue-500 prose-img:rounded-xl dark:prose-invert sm:text-left md:p-0",
     innerHTML: $props.post.title
   }, null, 8
@@ -110,8 +114,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     innerHTML: $props.post.body
   }, null, 8
   /* PROPS */
-  , _hoisted_3)])], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  , _hoisted_3)])], 64
+  /* STABLE_FRAGMENT */
   );
 }
 

@@ -35,24 +35,45 @@
         </NavLink>
 
         <button
-          type="button"
           class="rounded-md px-6 py-2 font-medium uppercase ring ring-slate-100 hover:bg-blue-600 hover:text-white hover:ring-0 dark:text-white dark:ring-slate-800"
         >
           Sign Up
         </button>
       </div>
+      <!--- Mobile nav-->
       <div class="flex flex-1 justify-end sm:hidden">
-        <i class="fas fa-bars text-2xl"></i>
+        <i
+          :class="
+            !isOpen
+              ? 'fas fa-bars text-black focus:text-blue-400 dark:text-white dark:focus:text-blue-600'
+              : 'fa-solid fa-xmark text-blue-600 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-600'
+          "
+          class="text-2xl"
+          @click="isOpen = !isOpen"
+        />
       </div>
+      <MobileNav
+        v-show="isOpen"
+        :show="isOpen"
+        class="z-40 block sm:hidden"
+        @close-nav="isOpen = false"
+      />
     </div>
   </nav>
 </template>
 
 <script>
 import NavLink from '@ui/AppNavLink'
+import MobileNav from '@layout/MobileNav'
 export default {
   components: {
     NavLink,
+    MobileNav,
+  },
+  data() {
+    return {
+      isOpen: false,
+    }
   },
 }
 </script>

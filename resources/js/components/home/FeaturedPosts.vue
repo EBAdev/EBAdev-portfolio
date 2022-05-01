@@ -30,4 +30,4 @@ export default {
   props: { posts: { type: Object, required: true } },
 }
 </script>
-<style lang=""></style>
+

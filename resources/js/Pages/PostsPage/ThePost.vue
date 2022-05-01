@@ -1,5 +1,6 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
+  <Head title="EBAdev - Posts" />
   <div class="my-4 w-full">
     <div
       class="prose prose-slate mx-auto p-4 text-center prose-a:text-blue-500 prose-img:rounded-xl dark:prose-invert sm:text-left md:p-0"

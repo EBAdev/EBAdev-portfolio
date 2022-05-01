@@ -17,7 +17,7 @@
 
 <h2>Layout</h2>
 <ul>
-<li> Add mobile navigation.</li>
+<li>No tasks ATM.</li>
 </ul>
 
 <h2>About page</h2>
