@@ -9,8 +9,7 @@ export default {
    * to learn how to generate automatic titles
    */
   title: 'Design System/Navbar link',
-  component: NavLink,
-  subcomponents: { Link },
+  components: { NavLink, Link },
 }
 
 //👇 We create a “template” of how args map to rendering
@@ -20,7 +19,7 @@ const Template = (args) => ({
     //👇 The args will now be passed down to the template
     return { args }
   },
-  template: ' <NavLink href=/ > Posts </NavLink>',
+  template: ' <NavLink href="/" v-bind="args" > Posts </NavLink>',
 })
 
 export const Default = Template.bind({})
